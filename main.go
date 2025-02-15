@@ -18,7 +18,7 @@ func main() {
 	if err != nil {
 		log.Fatalf("Failed to initialize mysqlDataBase: %v", err)
 	}
-	cache.InitRedis("192.168.88.128:6379", "0d000721", 0)
+	cache.InitRedis("192.168.88.128:6379", "123456", 0)
 
 	// 初始化 DAO
 	studentCacheDao := dao.NewStudentCacheDao(cache.RedisClient)
